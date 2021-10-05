@@ -103,18 +103,22 @@ body {
 
 #todayBtn:hover {
   background-color: rgb(194, 226, 226);
+  cursor: pointer;
 }
 
 #prevBtn:hover {
   background-color: rgb(194, 226, 226);
+  cursor: pointer;
 }
 
 #nextBtn:hover {
   background-color: rgb(194, 226, 226);
+  cursor: pointer;
 }
 
 .daysBtn:hover {
   border: 2px solid rgb(194, 218, 226);
+  cursor: pointer;
 }
 
 
@@ -126,10 +130,12 @@ body {
   height: 35px;
   width: 35px;
   background-color: rgba(194, 226, 226);
+  cursor: pointer;
 }
 
 .active:hover {
   border: 2px solid rgb(194, 207, 226);
+  cursor: pointer;
 }
 
 .selectedActive {
@@ -140,6 +146,7 @@ body {
   height: 35px;
   width: 35px;
   background-color: rgba(194, 226, 226);
+  cursor: pointer;
 }
 
 /* Highlight the "current" day */
@@ -150,6 +157,7 @@ body {
   border: 2px solid rgb(79, 194, 194);
   height: 35px;
   width: 35px;
+  cursor: pointer;
 }
 
 /* Weekdays (Mon-Sun) */
@@ -169,13 +177,11 @@ body {
   border-bottom: 1px solid rgb(79, 194, 194);
   background-color:rgb(194, 226, 226);
   color: white;
-  
 }
 
 .mDays td {
   font-size: 10pt;
   padding: 10px;
-  
 }
 
 .canvasClock {
@@ -188,6 +194,7 @@ body {
   -webkit-text-fill-color: white; /* Will override color (regardless of order) */
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: darkgrey;
+
 }
 
 #pageWrap {
