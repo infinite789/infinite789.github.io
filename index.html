@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang='en-US'>
+
+    <head>
+        <title>Calendar</title>
+        <link rel="stylesheet" href="styles.css">
+        <script src="calendar.js"></script>
+    </head>
+
+    <body>
+        
+        <div class="monthParent">
+            <div class="month">
+                <ul>
+                    <li class='today'><button id="todayBtn">Today</button></li>
+                    <li class="prev"><button id="prevBtn">&#10094;</button></li>
+                    <li class="next"><button id="nextBtn">&#10095;</button></li>
+                    <li><canvas id="canvas" class='canvasClock' width='150' height='150'></canvas></li>
+                    <li id = 'currentMonth'></li>
+                    <script src="clock.js"></script>
+                </ul>
+            </div>
+        </div>
+        <!-- table for the days of the month -->
+        <table class="mDays">
+            <thead>
+                <tr class='heading'>
+                    <th>Mo</th>
+                    <th>Tu</th>
+                    <th>We</th>
+                    <th>Th</th>
+                    <th>Fr</th>
+                    <th>Sa</th>
+                    <th>Su</th>
+                </tr>
+            </thead>
+            <tbody id='mDays' class="calBody"></tbody>
+        </table>
+        
+        
+  
+    
+    </body>
+
+</html>
