@@ -175,7 +175,7 @@ body {
 .mDays th {
   padding: 10px;
   border-bottom: 1px solid rgb(79, 194, 194);
-  background-color:rgb(194, 226, 226);
+  background-color: rgb(34, 133, 136);
   color: white;
 }
 
@@ -188,14 +188,16 @@ body {
   background-color: #1abcbc;
 }
 
+/*
 .heading{
   font-size: 20px;
   color: black;
-  -webkit-text-fill-color: white; /* Will override color (regardless of order) */
+  -webkit-text-fill-color: white; // Will override color (regardless of order) 
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: darkgrey;
 
 }
+*/
 
 #pageWrap {
   border: 3px solid #2f9dbe;
