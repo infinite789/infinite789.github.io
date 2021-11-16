@@ -125,10 +125,14 @@ body {
     max-height: 100%;
     padding-top: 2rem;
 }
-.banner-section-image {
+.banner-figure-wrapper {
     text-align: center;
 }
 
+.banner-figure {
+    width: clamp(1.5rem, 50%, 10rem);
+
+}
 .banner-section-content {
     line-height: 2rem;
 }
@@ -136,6 +140,7 @@ body {
     font-size: 200%;
 
 }
+
 
 
 /* ********* *********** ********** */
@@ -179,7 +184,7 @@ body {
 
 .section-content-image {
     display: block;
-
+    width: clamp(1.5rem, 100%, 20rem);
     margin-left: auto;
     margin-right: auto;
     border-radius: 50%;
@@ -190,15 +195,25 @@ body {
 /* ********* * Footer * ********** */
 /* ********* *********** ********** */
 .footer {
+    background-color: darkslategray;
+    min-height: 50px;
+    width: 80%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-
+.footer-content {
+}
 
 /* ********* *********** ********** */
 /* ********* ** Media ** ********** */
 /* ********* *********** ********** */
 @media only screen and (max-width: 300px) {
- 
+    #page-container {
+        min-width: 300px;
+    }
 }
 
 @media only screen and (max-width: 800px) and (min-width: 300px) {
