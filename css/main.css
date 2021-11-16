@@ -61,6 +61,7 @@ body {
     width: 100%;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     padding: 0 2rem 0 2rem;
 }
 
@@ -69,10 +70,12 @@ body {
     
     align-items: center;
     max-width: 30rem;
+    min-width: 10rem;
 }
 
 .business-logo {
     width: 100%;
+
 }
 
 
@@ -83,17 +86,16 @@ body {
     max-width: 600px;
     display: flex; 
     align-items: center;
-    
+    flex-wrap:wrap;
 }
 
 .navlink {
     text-decoration: none;
     color:black;
-
     color: rgb(255,255,255);
-
     padding-left: 1rem;
     white-space: nowrap;
+    font-size: 1em;
 
 }
 
@@ -210,7 +212,7 @@ body {
 /* ********* *********** ********** */
 /* ********* ** Media ** ********** */
 /* ********* *********** ********** */
-@media only screen and (max-width: 300px) {
+@media only screen and (max-width: 380px) {
     #page-container {
         min-width: 300px;
     }
