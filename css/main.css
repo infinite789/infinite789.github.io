@@ -1,9 +1,26 @@
+:root {
+    --header-height: 25vh;
+    --banner-padding: 1rem;
+}
+
 @font-face {
     font-family: 'Poppins';
     src: url('../fonts/Poppins-Regular.woff') format('woff'), 
          url('../fonts/Poppins-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'PoppinsSemiBold';
+    src: url('../fonts/Poppins-SemiBold.woff') format('woff'), 
+         url('../fonts/Poppins-SemiBold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
 }
 
+/* ********* *********** ********** */
+/* ********* * General * ********** */
+/* ********* *********** ********** */
 *{
   box-sizing: border-box;
 }
@@ -17,40 +34,64 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    max-width: 900px;
+    margin: 0 auto;
 }
   
 #content-wrap {
     flex: 1 1 auto;
 }
 
-.page-header {
+/* ********* ********** ********** */
+/* ********* * Header * ********** */
+/* ********* ********** ********** */
+.page-header-wrapper {
     position: relative;
-    min-height: 200px;
     background-image: linear-gradient(rgba(0,0,0,0.50),rgba(0,0,0,0.50)), url('../assets/header-background.jpg');
     background-size: cover;
     background-position: bottom;
+    min-height: var(--header-height);
+    min-width: 240px;
 
 }
 
-.page-header h1 {
-    color: white;
-    padding-right: 1rem;
-    margin:0;
-    font-size: clamp(16px, 10vw, 80px);
-    padding-left: 1rem;
+.page-header {
     position: absolute;
     bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 2rem 0 2rem;
 }
 
+.business-logo-wrapper {
+    display: flex;
+    
+    align-items: center;
+    max-width: 30rem;
+}
+
+.business-logo {
+    width: 100%;
+}
+
+
 .page-nav {
-    font-size: 2rem;
-    background-color: rgb(0,0,0);
+
+    font-size: 1.2rem;
     min-height: 5rem;
+    max-width: 600px;
+    display: flex; 
+    align-items: center;
+    
 }
 
 .navlink {
     text-decoration: none;
+    color:black;
+
     color: rgb(255,255,255);
+
     padding-left: 1rem;
     white-space: nowrap;
 
@@ -61,34 +102,112 @@ body {
     color:  rgb(156, 236, 182);
 }
 
-.problem {
+
+/* ********* ********** ********** */
+/* ********* * Banner * ********** */
+/* ********* ********** ********** */
+.banner-background {
+    padding: var(--banner-padding);
+}
+.banner-wrapper {
+    min-height: calc(100vh - var(--header-height) - var(--banner-padding)*2 );
+    margin: 0;
+    background-color: rgba(239, 241, 223);
+    border-radius: 20px 130px;
+    opacity: 50;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.banner-section-wrapper {
+    min-width: 180px;
+    width: 30%;
+    max-height: 100%;
+    padding-top: 2rem;
+}
+.banner-section-image {
+    text-align: center;
+}
+
+.banner-section-content {
+    line-height: 2rem;
+}
+.banner-section-content p::first-letter {
+    font-size: 200%;
+
+}
+
+
+/* ********* *********** ********** */
+/* ********* * Content * ********** */
+/* ********* *********** ********** */
+.section {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
     flex-wrap: wrap;
-    padding: 2rem;
+    padding: 2.5rem;
     
 }
 
-.problem-content {
-    max-width: 50%
+.section-border {
+    padding: 0.2rem;
+    background-image: linear-gradient(to right, #2ebf91, #12381b);
+    width: 10%;
+    margin: 0 auto 0 auto;
+    border-radius: 100%;
 }
 
-img {
-    width: 30rem;
-    border-radius: 50rem;
-    min-width: 200px;
+.section-title {
+    font-family: 'PoppinsSemiBold';   
+    font-size: 2.4rem;
+}
+/*
+@keyframes color-animation {
+    0% {border-color: linear-gradient(to right, #8360c3, #2ebf91);}
+    50% {border-color:linear-gradient(to right, #8360c3, #2ebf91);}
+    100% {border-color: linear-gradient(to right, #8360c3, #2ebf91);}
+}
+*/
+
+.section-content {
+    max-width: 50%;
+
 }
 
-@media only screen and (max-width: 750px) {
-    #page-container {
-        min-width: 200px;
-    }
-    img {
-        max-width: 100%;
-    }
-    .problem-content {
-        max-width: 100%
-    }
+
+.section-content-image {
+    display: block;
+
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50%;
+
 }
+
+/* ********* *********** ********** */
+/* ********* * Footer * ********** */
+/* ********* *********** ********** */
+.footer {
+}
+
+
+
+/* ********* *********** ********** */
+/* ********* ** Media ** ********** */
+/* ********* *********** ********** */
+@media only screen and (max-width: 300px) {
+ 
+}
+
+@media only screen and (max-width: 800px) and (min-width: 300px) {
+ 
+}
+
+
+@media only screen and (min-width: 900px) {
+
+}
+
+
