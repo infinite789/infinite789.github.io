@@ -212,9 +212,12 @@ body {
 /* ********* *********** ********** */
 /* ********* ** Media ** ********** */
 /* ********* *********** ********** */
-@media only screen and (max-width: 380px) {
+@media only screen and (max-width: 400px) {
     #page-container {
-        min-width: 300px;
+        min-width: 400px;
+    }
+    .section-content{
+        max-width: 100%;
     }
 }
 
