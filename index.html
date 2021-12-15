@@ -3,8 +3,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
     <link rel='stylesheet' href='./css/main.css'>
-    <script src="./javascript/main.js" defer></script>
     <title>Home</title>
 </head>
 <body>
@@ -12,51 +13,19 @@
         <header class="page-header">
             <div class="business-logo-wrapper"><img src="./assets/logo.png" alt="logo.png" class="business-logo"></div>
             <nav class="page-nav">
-                <a class='navlink' href=''>Home</a>
-                <a class='navlink' href=''>Demo</a>
-                <a class='navlink' href=''>Contact</a>
+                <a class='navlink' href='index.html'>Home</a>
+                <a class='navlink' href='#offer'>Our offer</a>
+                <a class='navlink' href='#contact'>Contact</a>
             </nav>
         </header>
     </div>
     <div id="page-container">
         <div id="content-wrap">
-            <div class="banner-background">
-                <div class="banner-wrapper">
-                    <div class="banner-section-wrapper">
-                        <section class="banner-section">
-                            <div class="banner-figure-wrapper">
-                                <img src="./assets/dashboard.png" class="banner-figure">
-                            </div>
-                            <div class="banner-section-content">
-                                <p>
-                                    Software that provides the horticulturist with data in order to optimize its crops harvest and revenues. The data, such as temperature, wind, soil humidity, nutrient content, tractor speed when harvesting, etc. are already given by all sorts of machines but we want to combine all the data so that the horticulturist has a clear overview and can make better decisions on how to execute his processes.​
-                                </p>
-                            </div>
-                            
-                        </section>
-                    </div>
-                    <div class="banner-section-wrapper">
-                        <section class="banner-section">
-                            <div class="banner-figure-wrapper">
-                                <img src="./assets/graph.png" class="banner-figure">
-                            </div>
-                            <div class="banner-section-content">
-                                <p>
-                                    This real-time inventory management software/tool can lead to basic inventory reduction and lower holding costs. An accurate system is important for maintaining stock control (prevent shortages and excess stock) , this results in an improved supply scheduling which can free up some working capital and aid the growth of your business.​
-                                </p>
-                            </div>
-                            
-                        </section>
-                        <section class="banner-section">
-                            <div class="banner-section-content">
-                                <img src="" class="banner-figure">
-                                <p>
-                                </p>
-                            </div>
-                        </section>
-                    </div>
-                </div>
-            </div>
+            
+            <!-- ***** -->
+            <!-- MAIN CONTENT -->
+            <!-- ***** -->
+
             <div class="section-wrapper">
                 <section class="section">
                     
@@ -64,40 +33,129 @@
                         <img src="./assets/the-problem.jpg" class="section-content-image">
                     </div>
                     <div class="section-content">
-                        <h2 class="section-title"> The problem </h2>
+                        <h2 class="section-title"> The <span class="highlight">problem</span></h2>
+                        <div class="quote">
+                            <p>“There are a lot of tools that gather a lot of data, but I don’t know any that puts this data together and connects it to each other”​</p>
+                            <p>- Local farmer​ <p>
+                        </div>
                         <ul>
-                            <li> Lots of data is collected in the agricultural sector​ </li>
-                            <li> The data is not easy to understand, interpret and act upon​ </li>
-                            <li> Farmers are missing out on opportunities in terms of cost savings and strategic improvements​ </li>
+                            <li>Increasingly more data is collected in the agricultural sector​</li>
+                            <li>The data is not easy to understand, interpret and act upon​</li>
+                            <li>Available tools and applications are dependent on machine vendors</li>
                         </ul>
                     </div>
                 </section>
-                <div class="section-border"></div>
             </div>
             <div class="section-wrapper">
                 <section class="section">
                     
                     <div class="section-content">
-                        <h2 class="section-title"> The solution </h2>
+                        <h2 class="section-title"> The <span class="highlight">solution</span></h2>
                         <ul>
-                            <li> Easy-to-understand tool​ </li>
-                            <li> Data from different machines​ </li>
-                            <li> Climatic data​ </li>
+                            <li>Easy-to-understand tool​</li>
+                            <li>Support for multiple machine vendors​</li>
+                            <li>Available on mobile devices</li>
+                            <li>Integration with climatic data and publicly available agricultural data</li>
                         </ul>
                     </div>
                     <div class="image-cropper">
-                        <img src="./assets/the-solution.jpg" class="section-content-image">
+                        <img src="./assets/prototype_home.svg" class="section-content-image">
                     </div>
                 </section>
             </div>
+
+            <!-- ***** -->
+            <!-- OFFER -->
+            <!-- ***** -->
+            <div id="offer"></div>
+            <div class="card-section-wrapper">
+                <div class="card-section-title">We <span class="highlight">offer</span></div>
+                <div class="cards-wrapper"> 
+                    <section class="card">
+                        <div class="card-title">
+                            <div class="title-image-wrapper"><img src="./assets/cards/farmer.png" class="card-icon"></div>
+                            <h2>Farmer value</h2>
+                        </div>
+                        <div class="card-content">
+                            <p>We are developing a personalized dashboard in cooperation with farmers. We belief farmers will benefit from our <span class="highlight">integrative solution</span> through its support for all their preferred analysis tools in one place. <p>
+                        </div>
+                    </section>
+                    <section class="card">
+                        <div class="card-title">
+                            <div class="title-image-wrapper"><img src="./assets/cards/research.png" class="card-icon"></div>
+                            <h2>R&D</h2>
+                        </div>
+                        <div class="card-content">
+                            <p>Our expertise in data analytics, leveraged with the insights derived from practitioners creates the perfect environment for <span class="highlight">research and development</span>. We are building our platform to support predictive analysis on a large scale by making use of a cloud computing architecture. This will provide us with opportunities to provide information in the form of actionable insights to farmers, industrial companies and R&D bureaus.<p>
+                        </div>
+                    </section>
+                    <section class="card">
+                        <div class="card-title">
+                            <div class="title-image-wrapper"><img src="./assets/cards/partnership.png" class="card-icon"></div>
+                            <h2>Partnership</h2>
+                        </div>
+                        <div class="card-content">
+                            <p>As we are all about building an integrative solution that supports any analysis, we are open to <span class="highlight">collaborations and partnerships</span> with various suppliers of agricultural equipment. Together we can work on challenging projects and build towards a sustainable future.<p>
+                        </div>
+                    </section>
+                    <section class="card">
+                        <div class="card-title">
+                            <div class="title-image-wrapper"><img src="./assets/cards/service.png" class="card-icon"></div>
+                            <h2>Customer service</h2>
+                        </div>
+                        <div class="card-content">
+                            <p>Keeping a close connection to our customers is how we can deliver a product that is truly tailored to his needs. We provide <span class="highlight">24/7 customer service</span> and guarantee <span class="highlight">on-field support</span> within <span class="highlight">4 hours</span> during working hours. <p>
+                        </div>
+                    </section>
+                </div>
+            </div>  
+
+            <!-- ***** -->
+            <!-- CONTACT -->
+            <!-- ***** -->
+            <div id="contact"></div>
+            <div class="form-wrapper">
+                <div class="form-container"> 
+                    
+                    <form id="contact-form" action="" method="post">
+                       
+                        <h3>Looking forward to hearing from you!</h3>
+                        <h4>Contact form</h4>
+                        <fieldset>
+                            <input placeholder="Your name" type="text" tabindex="1" required>
+                        </fieldset>
+                        <fieldset>
+                            <input placeholder="Your Email Address" type="email" tabindex="2" required>
+                        </fieldset>
+                        <fieldset>
+                            <input placeholder="Your Phone Number (optional)" type="tel" tabindex="3" required>
+                        </fieldset>
+                        <fieldset>
+                            <input placeholder="Your Web Site (optional)" type="url" tabindex="4" required>
+                        </fieldset>
+                        <fieldset>
+                            <textarea placeholder="Type your message here...." tabindex="5" required></textarea>
+                        </fieldset>
+                        <fieldset>
+                            <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
+                        </fieldset>
+                    </form>
+                  </div>
+            </div>
         </div>
-        <footer class="footer">
-            <section class="footer-content">
-                Credits for this coder
-                <a href='https://pngtree.com/so/Cartoon'>Cartoon png from pngtree.com/</a>
-            </section>
-           
+    </div>
+    <div class="footer-basic">
+        <footer>
+            <div class="social"><a href="#"><i class="icon ion-social-instagram"></i></a><a href="#"><i class="icon ion-social-snapchat"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-facebook"></i></a></div>
+            <ul class="list-inline">
+                <li class="list-inline-item"><a href="#">Home</a></li>
+                <li class="list-inline-item"><a href="#offer">Our offer</a></li>
+                <li class="list-inline-item"><a href="#contact">Contact</a></li>
+            </ul>
+            <p class="copyright">DataHarvest © 2020</p>
         </footer>
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
