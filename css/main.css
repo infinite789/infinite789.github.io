@@ -264,9 +264,17 @@ body {
     height: 50px;
 }
 .card-content {
-    margin: 20px;
+    margin: 0 20px;
 }
 
+@media only screen and (max-width: 637px) {
+    .card {
+        min-width: 90%;
+    }
+    .card-wrapper {
+        min-width: 295px;
+    }
+}
 
 
 /* ********* *********** ********** */
@@ -472,4 +480,61 @@ fieldset {
 /* ********* *********** ********** */
 .highlight{
     color: rgb(22, 134, 31)
-  }
+}
+  
+.button-wrapper {
+    height: 40px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+
+}
+.button-join {
+    background-color: #4CAF50;
+    color: #fff;
+    font-family: 'open-sans-bold';
+    border-radius: 5px;
+    padding: 5px;
+    border: none;
+    height: 40px;
+    width: 60px;
+    white-space: nowrap;
+    text-align: left;
+    font: 15px;
+    position: relative;
+    box-shadow: rgba(59, 122, 103, 0.705) 0px 30px 60px -12px inset, rgba(33, 110, 67, 0.493) 0px 18px 36px -18px inset;
+}
+
+.button-join:focus {
+    outline: none;
+
+}
+.button-join:not(:hover) {
+    animation: button-change-size 4.5s infinite;
+}
+
+.button-join:hover {
+    background-color: #28a745;
+    animation-name: button-join-animation;
+    animation-duration: 0.7s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes button-change-size {
+    0%{height: 30px;bottom: -3px;}
+    25%{height: 40px;bottom: 0px;}
+    50%{height: 30px;bottom: -3px;}
+    75%{height: 40px;bottom: 0px;}
+    100%{height: 30px;bottom: -3px;}
+    
+}
+
+@keyframes button-join-animation {
+    100% {width:90px;
+          border-radius: 5px 10px 10px 5px;}
+}
+
+.arrow--right {
+    position: relative;
+    height: 15px;
+    top: 2px;
+}
