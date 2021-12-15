@@ -101,6 +101,17 @@
     opacity: 1;
 
 }
+
+@media only screen and (max-width: 816px) {
+    .page-nav {
+        max-height: 2.5rem;
+        margin-top: 0;
+    }
+    .page-header {
+        margin-top: auto;
+    }
+}
+
 /* ********* *********** ********** */
 /* ********* * General * ********** */
 /* ********* *********** ********** */
