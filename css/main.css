@@ -191,6 +191,27 @@ body {
 .image-cropper {
     max-width: 300px;
 }
+
+
+@media only screen and (max-width: 353px) {
+    .page-container, .page-header-wrapper {
+        min-width: 353px;
+    }
+    .section-wrapper {
+        min-width: 295px;
+    }
+    .section-content{
+        max-width: 100%;
+    }
+}
+
+@media only screen and (max-width: 737px) {
+    .section-content {
+        min-width: 100%;
+    }
+}
+
+
 /* ********* *********** ********** */
 /* ********* * Card * ********** */
 /* ********* *********** ********** */
@@ -320,27 +341,6 @@ body {
     margin-bottom:0;
 }
 
-
-/* ********* *********** ********** */
-/* ********* ** Media ** ********** */
-/* ********* *********** ********** */
-@media only screen and (max-width: 400px) {
-    #page-container {
-        min-width: 400px;
-    }
-    .section-content{
-        max-width: 100%;
-    }
-}
-
-@media only screen and (max-width: 800px) and (min-width: 300px) {
- 
-}
-
-
-@media only screen and (min-width: 900px) {
-
-}
 
 
 
